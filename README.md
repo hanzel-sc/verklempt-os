@@ -86,16 +86,27 @@ To be frank, this project idea was conceived cause I was pretty much bored out o
 
 ---
 
-## License
+## Contributing
 
-Released under the **MIT License**.
-Fork, modify, or expand as you wish.
+VerklemptOS is meant to be playful, experimental, and collaborative. Contributions are welcome in many forms:
 
----
+- Submitting bug fixes or improvements to existing code.
+- Adding new shell commands or fun ASCII art.
+- New modules - anything that you feel this project needs. 
+- Expanding hardware support (keyboard, timer, paging, etc.)
+- Sharing crazy ideas that push the project in weird directions
+
+Contribution Guidelines
+
+- Fork the repo and create a new branch (feature/new-command).
+- Make your changes with clear commit messages.
+- Submit a Pull Request — describe your idea and why it belongs in VerklemptOS.
+
+Whether you’re here to learn, to tinker, or just to add creepy ASCII skulls, you’re welcome to contribute.
 
 # ROADMAP
 
-# VerklemptOS Roadmap 🕯️
+## VerklemptOS Roadmap
 
 This section outlines both **practical milestones** and **wild, creative goals** for VerklemptOS.
 It’s equal parts technical growth plan and playground for weird ideas.
