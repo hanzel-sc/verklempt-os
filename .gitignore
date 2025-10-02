@@ -1,0 +1,20 @@
+# Build artifacts
+/build/
+/*.bin
+/*.o
+/*.iso
+
+# OSDev temp files
+*.map
+*.img
+
+# Editor/IDE files
+*.swp
+*.swo
+.vscode/
+*.code-workspace
+*.DS_Store
+
+# Backup files
+*~
+
