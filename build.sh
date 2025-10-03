@@ -4,14 +4,17 @@ set -e
 # Create build folder
 mkdir -p build
 
-echo "[*] Assembling bootloader.asm..."
-nasm -f elf32 bootloader.asm -o build/boot.o
+echo "[*] Assembling boot.asm..."
+nasm -f elf32 boot.asm -o build/boot.o
 
 echo "[*] Compiling kernel.c..."
 gcc -m32 -ffreestanding -c kernel.c -o build/kernel.o
+gcc -m32 -ffreestanding -c shell.c -o build/shell.o
+gcc -m32 -ffreestanding -c keyboard.c -o build/keyboard.o
+gcc -m32 -ffreestanding -c ascii.c -o build/ascii.o
 
 echo "[*] Linking kernel..."
-ld -m elf_i386 -T linker.ld -o build/verklempt.bin build/boot.o build/kernel.o
+ld -m elf_i386 -T linker.ld -o build/verklempt.bin build/boot.o build/kernel.o build/shell.o build/keyboard.o build/ascii.o
 
 echo "[*] Creating ISO for VirtualBox..."
 mkdir -p build/isodir/boot/grub
